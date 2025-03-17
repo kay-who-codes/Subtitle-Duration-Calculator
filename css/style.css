@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #53ceff;
+    --input-bg: #2d2d2d;
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 2rem;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--input-bg);
+    border: 2px solid #3d3d3d;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.results {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.result-box {
+    background-color: var(--input-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-box.highlight {
+    background-color: #14bcff0a;
+    color: var(--accent-color);
+}
+
+.label {
+    opacity: 0.8;
+}
+
+#time-result {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Previous CSS remains the same */
+
+/* Add these new styles for the table */
+.table-container {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: var(--input-bg);
+    border-radius: var(--border-radius);
+}
+
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+th {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #3d3d3d;
+}

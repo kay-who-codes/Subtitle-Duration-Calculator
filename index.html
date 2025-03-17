@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💬 Subtitle Timing Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h1>Subtitle Timing Calculator</h1>
+        
+        <div class="input-group">
+            <label for="text-input">Paste your text:</label>
+            <textarea id="text-input" placeholder="Enter your subtitle text here..."></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="word-count">Or enter word count:</label>
+            <input type="number" id="word-count" placeholder="Manual word count entry">
+        </div>
+
+        <div class="results">
+            <div class="result-box">
+                <span class="label">Total Words:</span>
+                <span id="word-count-output">0</span>
+            </div>
+            <div class="result-box highlight">
+                <span class="label">Display Time:</span>
+                <span id="time-result">0.00s</span>
+            </div>
+        </div>
+
+        <!-- Table for subtitle calculations -->
+        <div class="table-container">
+            <h2>Subtitle Duration Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Words</th>
+                        <th>Display Time</th>
+                    </tr>
+                </thead>
+                <tbody id="subtitle-table">
+                    <!-- Rows will be dynamically generated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
